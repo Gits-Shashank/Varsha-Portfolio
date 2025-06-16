@@ -66,7 +66,8 @@ function sendMessage(event) {
     return;
   }
 
-  const whatsappNumber = "916393766340"; // converts to international format
+  const whatsappUrl = `intent://send?phone=${6393766340}&text=${encodeURIComponent(finalMessage)}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end`;
+
   const finalMessage = `👤 Contact Request\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage: ${message}\n\n✅ Contact successfully submitted.`;
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(finalMessage)}`;
