@@ -66,7 +66,7 @@ function sendMessage(event) {
     return;
   }
 
-  const whatsappNumber = "91" + phone.replace(/\D/g, '6393766340'); // converts to international format
+  const whatsappNumber = "916393766340; // converts to international format
   const finalMessage = `👤 Contact Request\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage: ${message}\n\n✅ Contact successfully submitted.`;
 
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(finalMessage)}`;
