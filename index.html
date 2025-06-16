@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varsha Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Varsha <span>Portfolio</span></div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="varsha-resume.pdf" class="cv-btn" download>Download CV</a>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+      <div class="image-box">
+        <img src="Varsha.jpg" alt="Shashank" class="profile-img" />
+      </div>
+      <div class="home-text">
+        <h1>Hello, I'm <span class="highlight">Varsha Gupta</span></h1>
+        <h2>And I'm a <span id="typing"></span></h2>
+        <p>Programmer passionate about clean code and responsive design.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/varshaaa_22/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://wa.me/qr/Q6MT3VIPWU7VC1"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="https://github.com/Gits-Shashank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+
+      <div class="about-content">
+        <div class="qualification">
+          <h3>Qualifications</h3>
+          <ul>
+            <li>
+              <strong>High School:</strong> 75% – Kendriya Vidhyalaya Mati (2018)
+            </li>
+            <li>
+              <strong>Intermediate:</strong> 73% – Morning Star Children's Academy (2020)
+            </li>
+            <li>
+              <strong>Graduation (BCA):</strong> 77% – Dayanand Academy of Management Studies (2020–2023)
+            </li>
+            <li>
+              <strong>Post Graduation (MCA):</strong> 8.4 CGPA – Pranveer Singh Institute Of Technology (2023-2025)
+            </li>
+          </ul>
+        </div>
+
+        <div class="description">
+          <p>
+            I am <b> Varsha Gupta,</b> a passionate and dedicated Master of Computer
+            Applications student at Pranveer Singh Institute of Technology. With
+            a strong academic background in computer applications and hands-on
+            experience in web development, I strive to continuously expand my
+            technical knowledge and contribute meaningfully to the tech
+            industry. I have developed a solid foundation in programming
+            languages like Python and C, alongside front-end technologies such
+            as HTML and CSS. My project TrendHive, an innovative e-commerce
+            platform, secured 10th place in my college's annual TechExpo event,
+            highlighting my practical development and teamwork skills. Certified
+            in multiple domains through Infosys Springboard—including HTML5,
+            CSS3, and Database Management Systems—I am also a 3-star SQL and
+            2-star Python achiever on HackerRank. My interests in web page
+            designing, crafting, and creative pursuits like dancing and cooking
+            keep me well-rounded and energized. Eager to take on new challenges,
+            I am actively looking for opportunities that will allow me to grow,
+            collaborate, and make a positive impact through technology.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <h2>My Skills</h2>
+      <div class="service-cards">
+        <div class="card">
+          <img src="frontend.jpg" alt="Frontend" />
+          <div class="card-overlay">Frontend Development <br> (Html5, CSS With Cprogrmming)</div>
+        </div>
+        <div class="card">
+          <img src="libre.jpg" alt="LibreOffice" />
+          <div class="card-overlay">LibreOffice Expertise</div>
+        </div>
+        <div class="card">
+          <img src="datahandle.jpg" alt="Data Entry" />
+          <div class="card-overlay">Data Handling <br> (MySql With MongoDB)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p id="live-time"></p>
+      <p>&copy;Varsha Portfolio | All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
